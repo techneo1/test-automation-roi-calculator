@@ -5,21 +5,22 @@ export default function App() {
     <div className="container">
       <h2 className="text-center m-4">Test Automation ROI Calculator</h2>
       {/* <p className="text-center">some description goes here...</p> */}
-      <div className="row">
+      <div className="row mb-5">
         <div className="col-md-2">
 
         </div>
         <div className="col-12 col-md-9 col-xl-8 center">
-          <div className="card">
-            {/* <h4 className="card-header">1. Calculate ROI</h4> */}
-            <div className="card-body">
-              <h5 className="card-title">
-                <div className="alert alert-info" role="alert">
-                  Enter below data and know the projection of
+          <div className="alert alert-info" role="alert">
+            Enter below data and know the projection of
               <strong> Savings from Automation</strong> and
                   <strong> ROI </strong>
               upto the next 5 years in a blink!
             </div>
+          <div className="card">
+            {/* <h4 className="card-header">1. Calculate ROI</h4> */}
+            <div className="card-body">
+              <h5 className="card-title">
+
               </h5>
               <form>
                 <div className="form-group">
