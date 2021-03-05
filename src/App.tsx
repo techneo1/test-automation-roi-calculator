@@ -26,26 +26,26 @@ export default function App() {
             <div className="card-body">
               <form>
                 <div className="form-group">
-                  <label htmlFor="totalNumberOfTests">Total Number of Tests</label>
+                  <label htmlFor="totalNumberOfTests">How much tests do you have?</label>
                   <input type="text" className="form-control" id="totalNumberOfTests"
-                    placeholder="Enter Total Number of Test" />
+                    placeholder="Enter Total Number of Tests" />
                 </div>
 
                 <div className="form-group">
-                  <label htmlFor="numberOfReleasesPerYear">Number of Releases/year</label>
+                  <label htmlFor="numberOfReleasesPerYear">How many number of releases do you have per year?</label>
                   <input type="text" className="form-control" id="numberOfReleasesPerYear"
                     placeholder="Enter Number of Releases/year" />
                 </div>
 
                 <div className="form-group">
-                  <label htmlFor="numberOfCheckinsPerDay">Number of checkins Per day</label>
+                  <label htmlFor="numberOfCheckinsPerDay">How many number of checkins do you have per day?</label>
                   <input type="text" className="form-control" id="numberOfCheckinsPerDay"
-                    placeholder="Enter Number of checkins Per day" />
+                    placeholder="Enter Number of checkins/day" />
                 </div>
 
 
                 <div className="form-group">
-                  <label htmlFor="totalManHours">Total Man hours to execute tests</label>
+                  <label htmlFor="totalManHours">How much total time(man hours) is spent to execute tests(Regression, Smoke etc.) manually/execution in hours?</label>
 
                   <div className="input-group">
                     <input type="text" className="form-control"
@@ -57,11 +57,11 @@ export default function App() {
                     </div>
                   </div>
 
-                  <small id="totalManHoursHelp" className="form-text text-muted">Total Time(Man Hours) to execute tests(Regression, Smoke etc.) manually/execution in hours</small>
+                  {/* <small id="totalManHoursHelp" className="form-text text-muted">Total Time(Man Hours) to execute tests(Regression, Smoke etc.) manually/execution in hours</small> */}
                 </div>
 
                 <div className="form-group">
-                  <label htmlFor="costOfResourceInEuros">Cost/Hr of 1 resource</label>
+                  <label htmlFor="costOfResourceInEuros">How much you pay to each resource per hour?</label>
 
                   <div className="input-group">
                     <div className="input-group-prepend">
@@ -69,7 +69,7 @@ export default function App() {
                     </div>
                     <input type="text" className="form-control"
                       id="costOfResourceInEuros" aria-label="Cost/Hr of 1 resource in Euros"
-                      placeholder="100.100,00" />
+                      placeholder="Enter Cost/Hr of 1 resource" />
 
                     <div className="input-group-append">
                       <span className="input-group-text">EUR</span>
@@ -78,7 +78,7 @@ export default function App() {
                 </div>
 
                 <div className="form-group">
-                  <label htmlFor="automationConsultingCost">Automation Consulting Cost</label>
+                  <label htmlFor="automationConsultingCost">How much do you spend on automation consulting per year?</label>
 
                   <div className="input-group">
                     <div className="input-group-prepend">
@@ -86,7 +86,7 @@ export default function App() {
                     </div>
                     <input type="text" className="form-control"
                       id="automationConsultingCost" aria-label="Automation Consulting Cost"
-                      placeholder="100.100,00" />
+                      placeholder="Enter Automation Consulting Cost" />
 
                     <div className="input-group-append">
                       <span className="input-group-text">EUR</span>
@@ -95,8 +95,7 @@ export default function App() {
                 </div>
 
                 <div className="form-group">
-                  <label htmlFor="infrastructureCostsPerYear">Infrastructure Costs/Year</label>
-
+                  <label htmlFor="infrastructureCostsPerYear">How much do you spend on infrastructure per year?</label>
 
                   <div className="input-group">
                     <div className="input-group-prepend">
@@ -104,7 +103,7 @@ export default function App() {
                     </div>
                     <input type="text" className="form-control"
                       id="infrastructureCostsPerYear" aria-label="Infrastructure Costs/Year"
-                      placeholder="100.100,00" />
+                      placeholder="Enter Infrastructure Costs/Year" />
                     <div className="input-group-append">
                       <span className="input-group-text">EUR</span>
                     </div>
@@ -112,10 +111,10 @@ export default function App() {
                 </div>
 
                 <div className="form-group">
-                  <label htmlFor="numberOfCrossPlatforms">Cross Browser/Platform Index/Device</label>
+                  <label htmlFor="numberOfCrossPlatforms">How many cross browser/platform devices do you support?</label>
                   <input type="text" className="form-control" id="numberOfCrossPlatforms" aria-describedby="numberOfCrossPlatformsHelp"
-                    placeholder="Enter Cross Browser/Platform Index/Device" />
-                  <small id="numberOfCrossPlatformsHelp" className="form-text text-muted">Select number of supported cross platforms</small>
+                    placeholder="Enter Number of Supported Cross Platforms" />
+                  {/* <small id="numberOfCrossPlatformsHelp" className="form-text text-muted">Select number of supported cross platforms</small> */}
                 </div>
 
                 <div className="form-group text-center">
