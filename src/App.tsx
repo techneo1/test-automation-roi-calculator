@@ -6,22 +6,24 @@ export default function App() {
       <h2 className="text-center m-4">Test Automation ROI Calculator</h2>
       {/* <p className="text-center">some description goes here...</p> */}
       <div className="row mb-5">
-        <div className="col-md-2">
-
-        </div>
+        <div className="col-md-2"></div>
         <div className="col-12 col-md-9 col-xl-8 center">
-          <div className="alert alert-info" role="alert">
+          {/* <p className="fancy-title">
             Enter below data and know the projection of
               <strong> Savings from Automation</strong> and
                   <strong> ROI </strong>
               upto the next 5 years in a blink!
-            </div>
+          </p> */}
+          <div className="alert alert-light">
+            Know the projection of
+              <strong> Savings from Automation</strong> and
+                  <strong> ROI </strong>
+              upto the next 5 years in a blink!
+                </div>
+
           <div className="card">
             {/* <h4 className="card-header">1. Calculate ROI</h4> */}
             <div className="card-body">
-              <h5 className="card-title">
-
-              </h5>
               <form>
                 <div className="form-group">
                   <label htmlFor="totalNumberOfTests">Total Number of Tests</label>
@@ -115,7 +117,10 @@ export default function App() {
                     placeholder="Enter Cross Browser/Platform Index/Device" />
                   <small id="numberOfCrossPlatformsHelp" className="form-text text-muted">Select number of supported cross platforms</small>
                 </div>
-                <button type="submit" className="btn btn-primary text-center">Calculate results</button>
+
+                <div className="form-group text-center">
+                  <button type="submit" className="btn btn-lg col-6 mx-auto">Calculate results</button>
+                </div>
               </form>
             </div>
           </div>
