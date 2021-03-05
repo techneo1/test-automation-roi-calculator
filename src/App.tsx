@@ -119,7 +119,7 @@ export default function App() {
                 </div>
 
                 <div className="form-group text-center">
-                  <button type="submit" className="btn btn-lg col-6 mx-auto">Calculate results</button>
+                  <button type="submit" className="btn btn-lg col-md-6 mx-auto">Calculate results</button>
                 </div>
               </form>
             </div>
