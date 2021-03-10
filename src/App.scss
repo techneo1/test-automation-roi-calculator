@@ -1,3 +1,7 @@
+body {
+  color: #777777;
+}
+
 th {
   text-align: center;
 }
@@ -9,10 +13,41 @@ th {
 }
 
 h2 {
-  color: #ff5000;
   text-transform: uppercase;
+  font-size: 30px;
+  // font-weight: 600;
+  // color: #ff5000;
+  color: #498fab;
 }
 
 .alert {
+  background: #ffb780;
+}
+
+.card.form {
+  background: #f1f1f1;;
+}
+
+label {
+  font-weight: bold;
+  color: #444444;
+}
+
+.form-label {
+  color: #777777;
+}
+
+h1 {
   color: #498fab;
+  font-size: 50px;
+}
+
+.card-deck .card {
+  // background-color: #e3f0f5;
+  color: #424242;
+  
+  h1 {
+    color:#498fab;
+    font-weight: 600;
+  }
 }
