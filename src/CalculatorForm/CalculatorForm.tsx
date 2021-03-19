@@ -67,7 +67,7 @@ export default function CalculatorForm() {
                 </div>
             </div>
 
-            <div className="form-group">
+            {/* <div className="form-group">
                 <label htmlFor="totalNumberOfTests">How much tests do you have?</label>
                 <input id="totalNumberOfTests" type="number" className="form-control" min="500" max="10000" step="500" />
             </div>
@@ -85,7 +85,7 @@ export default function CalculatorForm() {
             <div className="form-group">
                 <label htmlFor="numberOfCrossPlatforms">How many cross browser/platform devices do you support?</label>
                 <input id="numberOfCrossPlatforms" type="number" className="form-control" min="1" max="10" step="1" />
-            </div>
+            </div> */}
 
             <div className="form-group text-center">
                 <button type="submit" className="btn btn-lg col-md-6 mx-auto">Calculate results</button>
