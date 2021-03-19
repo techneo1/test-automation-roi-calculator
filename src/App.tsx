@@ -27,10 +27,10 @@ export default function App() {
 
       </div>
 
-      <div className="row card-deck mt-5">
+      <div className="row card-deck my-5">
         <div className="col-sm-12 col-md-4">
           <div className="card-body text-center">
-            <h1 className="card-title">€320,000</h1>
+            <h1 className="card-title"><em>€</em> 320,000</h1>
             <h3 className="card-title">Savings<sup>*</sup></h3>
             <LineChart
               data={savingsChartData}

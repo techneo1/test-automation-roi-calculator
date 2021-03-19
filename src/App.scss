@@ -42,12 +42,21 @@ h1 {
   font-size: 50px;
 }
 
-.card-deck .card {
+.card-deck {
   // background-color: #e3f0f5;
-  color: #424242;
+  // color: #424242;
+
+  background-color: #eee;
+  color: #777777; 
   
   h1 {
-    color:#498fab;
-    font-weight: 600;
+    // color:#ff5000;
+    color: #498fab;
+    font-weight: bold;
+  }
+
+  h3 {
+    color: #777777; 
+    font-weight: bold;
   }
 }
