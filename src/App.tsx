@@ -54,7 +54,7 @@ export default function App() {
           </div>
         </div>
 
-        <div className="col-sm-12 col-md-4">
+        <div className="inputCard col-sm-12 col-md-4">
           <div className="card-body">
 
             <div className="form-group">

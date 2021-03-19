@@ -45,8 +45,8 @@ h1 {
 .card-deck {
   // background-color: #e3f0f5;
   // color: #424242;
-
-  background-color: #eee;
+  background: #f9f9f9;
+  border: 1px solid #f1f1f1;
   color: #777777; 
   
   h1 {
@@ -58,5 +58,9 @@ h1 {
   h3 {
     color: #777777; 
     font-weight: bold;
+  }
+
+  .inputCard {
+    background: #f1f1f1;
   }
 }
