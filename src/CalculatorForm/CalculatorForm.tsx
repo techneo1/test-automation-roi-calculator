@@ -2,25 +2,6 @@ export default function CalculatorForm() {
     return (
         <form>
             <div className="form-group">
-                <label htmlFor="totalNumberOfTests">How much tests do you have?</label>
-                <input type="text" className="form-control" id="totalNumberOfTests"
-                    placeholder="Enter Total Number of Tests" />
-            </div>
-
-            <div className="form-group">
-                <label htmlFor="numberOfReleasesPerYear">How many number of releases do you have per year?</label>
-                <input type="text" className="form-control" id="numberOfReleasesPerYear"
-                    placeholder="Enter Number of Releases/year" />
-            </div>
-
-            <div className="form-group">
-                <label htmlFor="numberOfCheckinsPerDay">How many number of checkins do you have per day?</label>
-                <input type="text" className="form-control" id="numberOfCheckinsPerDay"
-                    placeholder="Enter Number of checkins/day" />
-            </div>
-
-
-            <div className="form-group">
                 <label htmlFor="totalManHours">How much total time(man hours) is spent to execute tests(Regression, Smoke etc.) manually/execution in hours?</label>
 
                 <div className="input-group">
@@ -87,10 +68,23 @@ export default function CalculatorForm() {
             </div>
 
             <div className="form-group">
+                <label htmlFor="totalNumberOfTests">How much tests do you have?</label>
+                <input id="totalNumberOfTests" type="number" className="form-control" min="500" max="10000" step="500" />
+            </div>
+
+            <div className="form-group">
+                <label htmlFor="numberOfReleasesPerYear">How many number of releases do you have per year?</label>
+                <input id="numberOfReleasesPerYear" type="number" className="form-control" min="5" max="100" step="5" />
+            </div>
+
+            <div className="form-group">
+                <label htmlFor="numberOfCheckinsPerDay">How many number of checkins do you have per day?</label>
+                <input id="numberOfCheckinsPerDay" type="number" className="form-control" min="1" max="50" step="1" />
+            </div>
+
+            <div className="form-group">
                 <label htmlFor="numberOfCrossPlatforms">How many cross browser/platform devices do you support?</label>
-                <input type="text" className="form-control" id="numberOfCrossPlatforms" aria-describedby="numberOfCrossPlatformsHelp"
-                    placeholder="Enter Number of Supported Cross Platforms" />
-                {/* <small id="numberOfCrossPlatformsHelp" className="form-text text-muted">Select number of supported cross platforms</small> */}
+                <input id="numberOfCrossPlatforms" type="number" className="form-control" min="1" max="10" step="1" />
             </div>
 
             <div className="form-group text-center">

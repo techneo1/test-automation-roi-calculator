@@ -24,36 +24,35 @@ export default function App() {
             </div>
           </div>
         </div>
-
-        <div className="card-deck mt-5 mx-auto">
-          <div className="card">
-            <div className="card-body text-center">
-              <h1 className="card-title">€320,000</h1>
-              <h3 className="card-title">Savings<sup>*</sup></h3>
-              <LineChart
-                data={savingsChartData}
-                legend="bottom"
-                prefix="€"
-                thousands=","
-                dataset={{ borderColor: "#ff5000", pointBackgroundColor: "#777777", pointBorderColor: "#777777", pointStyle: "rectRounded" }}
-              />
-            </div>
-          </div>
-
-          <div className="card">
-            <div className="card-body text-center">
-              <h1 className="card-title">186</h1>
-              <h3 className="card-title">ROI<sup>*</sup></h3>
-              <LineChart
-                data={roiChartData}
-                legend="bottom"
-                dataset={{ borderColor: "#498fab", pointBackgroundColor: "#777777", pointBorderColor: "#777777", pointStyle: "rectRounded" }}
-              />
-            </div>
+      </div>
+      <div className="row card-deck my-5 mx-auto px-5">
+        <div className="card col-12">
+          <div className="card-body text-center">
+            <h1 className="card-title">€ 320,000</h1>
+            <h3 className="card-title">Savings<sup>*</sup></h3>
+            <LineChart
+              data={savingsChartData}
+              legend="bottom"
+              prefix="€"
+              thousands=","
+              dataset={{ borderColor: "#ff5000", pointBackgroundColor: "#777777", pointBorderColor: "#777777", pointStyle: "rectRounded" }}
+            />
           </div>
         </div>
 
+        <div className="card col-12">
+          <div className="card-body text-center">
+            <h1 className="card-title">186</h1>
+            <h3 className="card-title">ROI<sup>*</sup></h3>
+            <LineChart
+              data={roiChartData}
+              legend="bottom"
+              dataset={{ borderColor: "#498fab", pointBackgroundColor: "#777777", pointBorderColor: "#777777", pointStyle: "rectRounded" }}
+            />
+          </div>
+        </div>
       </div>
+
     </div>
   );
 }
