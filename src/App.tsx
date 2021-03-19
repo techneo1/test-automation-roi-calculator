@@ -24,60 +24,62 @@ export default function App() {
             </div>
           </div>
         </div>
-        <div className="card-deck mt-5 mx-auto">
-          <div className="card">
-            <div className="card-body text-center">
-              <h1 className="card-title">€ 320,000</h1>
-              <h3 className="card-title">Savings<sup>*</sup></h3>
-              <LineChart
-                data={savingsChartData}
-                legend="bottom"
-                prefix="€"
-                thousands=","
-                dataset={{ borderColor: "#ff5000", pointBackgroundColor: "#777777", pointBorderColor: "#777777", pointStyle: "rectRounded" }}
-              />
-            </div>
-          </div>
 
-          <div className="card">
-            <div className="card-body text-center">
-              <h1 className="card-title">186</h1>
-              <h3 className="card-title">ROI<sup>*</sup></h3>
-              <LineChart
-                data={roiChartData}
-                legend="bottom"
-                dataset={{ borderColor: "#498fab", pointBackgroundColor: "#777777", pointBorderColor: "#777777", pointStyle: "rectRounded" }}
-              />
-            </div>
-          </div>
+      </div>
 
-          <div className="card">
-            <div className="card-body">
-
-              <div className="form-group">
-                <label htmlFor="totalNumberOfTests">Number of tests</label>
-                <input id="totalNumberOfTests" type="number" className="form-control" min="500" max="10000" step="500" />
-              </div>
-
-              <div className="form-group">
-                <label htmlFor="numberOfCrossPlatforms">Number of supported cross browser/platform devices</label>
-                <input id="numberOfCrossPlatforms" type="number" className="form-control" min="1" max="10" step="1" />
-              </div>
-
-              <div className="form-group">
-                <label htmlFor="numberOfReleasesPerYear">Number of releases / year</label>
-                <input id="numberOfReleasesPerYear" type="number" className="form-control" min="5" max="100" step="5" />
-              </div>
-
-              <div className="form-group">
-                <label htmlFor="numberOfCheckinsPerDay">Number of checkins / day</label>
-                <input id="numberOfCheckinsPerDay" type="number" className="form-control" min="1" max="50" step="1" />
-              </div>
-            </div>
+      <div className="row card-deck mt-5">
+        <div className="col-sm-12 col-md-4">
+          <div className="card-body text-center">
+            <h1 className="card-title">€320,000</h1>
+            <h3 className="card-title">Savings<sup>*</sup></h3>
+            <LineChart
+              data={savingsChartData}
+              legend="bottom"
+              prefix="€"
+              thousands=","
+              dataset={{ borderColor: "#ff5000", pointBackgroundColor: "#777777", pointBorderColor: "#777777", pointStyle: "rectRounded" }}
+            />
           </div>
         </div>
 
+        <div className="col-sm-12 col-md-4">
+          <div className="card-body text-center">
+            <h1 className="card-title">186</h1>
+            <h3 className="card-title">ROI<sup>*</sup></h3>
+            <LineChart
+              data={roiChartData}
+              legend="bottom"
+              dataset={{ borderColor: "#498fab", pointBackgroundColor: "#777777", pointBorderColor: "#777777", pointStyle: "rectRounded" }}
+            />
+          </div>
+        </div>
+
+        <div className="col-sm-12 col-md-4">
+          <div className="card-body">
+
+            <div className="form-group">
+              <label htmlFor="totalNumberOfTests">Number of tests</label>
+              <input id="totalNumberOfTests" type="number" className="form-control" min="500" max="10000" step="500" />
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="numberOfCrossPlatforms">Number of supported cross browser/platform devices</label>
+              <input id="numberOfCrossPlatforms" type="number" className="form-control" min="1" max="10" step="1" />
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="numberOfReleasesPerYear">Number of releases / year</label>
+              <input id="numberOfReleasesPerYear" type="number" className="form-control" min="5" max="100" step="5" />
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="numberOfCheckinsPerDay">Number of checkins / day</label>
+              <input id="numberOfCheckinsPerDay" type="number" className="form-control" min="1" max="50" step="1" />
+            </div>
+          </div>
+        </div>
       </div>
+
 
     </div>
   );
